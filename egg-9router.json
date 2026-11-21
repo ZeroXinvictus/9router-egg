@@ -38,6 +38,16 @@
       "field_type": "text"
     },
     {
+      "name": "Public URL",
+      "description": "Alamat publik panel ini, contoh https://router.domain.com atau http://IP:PORT. Kosongkan untuk pakai alamat internal.",
+      "env_variable": "BASE_URL",
+      "default_value": "",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "nullable|string|max:255",
+      "field_type": "text"
+    },
+    {
       "name": "Require API Key",
       "description": "Require a Bearer API key on /v1/* routes. Keep true when the port is public.",
       "env_variable": "REQUIRE_API_KEY",
